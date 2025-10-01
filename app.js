@@ -1,7 +1,7 @@
 let apikey = "_API_KEY_";
 
 function loadWeatherData(searchval){
-    fetch(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${searchval}`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${searchval}`)
     .then(res => res.json())
     .then(data => {
         document.getElementById('root').innerHTML = `
